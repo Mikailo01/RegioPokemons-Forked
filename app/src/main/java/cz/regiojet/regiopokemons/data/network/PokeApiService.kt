@@ -8,6 +8,6 @@ import retrofit2.http.Query
 interface PokeApiService {
 
     // TODO: 1. Define GET endpoint "pokemon" that returns PokemonResponse object
-    //  - Limit max results using query key `limit` and value `25`
+    //  - Limit max results using query key `limit` and value `20`
 
 }

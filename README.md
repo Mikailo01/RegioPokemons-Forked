@@ -1,6 +1,6 @@
 # RegioPokemons
 
-A repository to test basic Android work. There is no project setup needed, all dependencies, models, and DIs are set up.
+A repository to test basic Android work. There is no project setup needed, all dependencies, models, and DIs are set up (except repository module).
 
 You can navigate trough the project using TODOs or following checklist. 
 
