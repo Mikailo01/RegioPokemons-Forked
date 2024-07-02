@@ -34,7 +34,8 @@ private fun MainActivityScreen(
 ) {
 
     // TODO 2.
-    //  - show loading state, add button to fetch pokemon list
+    //  - add button to fetch pokemon list
+    //  - optionally: add loading state
     //  - print pokemon list on the screen
 
     // Todo uncomment to collect state from the VM

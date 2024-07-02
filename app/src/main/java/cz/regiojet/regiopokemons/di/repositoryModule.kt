@@ -4,6 +4,6 @@ import org.koin.dsl.module
 
 val repositoryModule = module {
 
-    // TODO: 1. Add repository dependency injection
+    // TODO: 1. Uncomment repository dependency injection when class is done
     //single { REPOSITORY_CLASS_NAME(get()) }
 }

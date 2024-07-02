@@ -9,11 +9,8 @@ class MainActivityViewModel(
 
     // Todo 2.
     //  - define observable state holder
-    //  - load pokemons
+    //  - load PokemonEntity list from the repository
 
-    data class UiState(
-        val list: List<PokemonEntity> = emptyList(),
-        val isLoading: Boolean = false
-    )
+    // data class UiState()
 
 }
