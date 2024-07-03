@@ -33,12 +33,9 @@ private fun MainActivityScreen(
     viewModel: MainActivityViewModel = koinViewModel(),
 ) {
 
-    // TODO 2.
+    // TODO 2.3
     //  - add button to fetch pokemon list
     //  - optionally: add loading state
     //  - print pokemon list on the screen
-
-    // Todo uncomment to collect state from the VM
-    //val state = viewModel.uiState.collectAsState()
 
 }

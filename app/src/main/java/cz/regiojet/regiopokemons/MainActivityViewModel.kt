@@ -1,16 +1,13 @@
 package cz.regiojet.regiopokemons
 
 import androidx.lifecycle.ViewModel
-import cz.regiojet.regiopokemons.data.model.PokemonEntity
+import cz.regiojet.regiopokemons.data.repository.TemporaryDraftName
 
 class MainActivityViewModel(
-    private val remoteRepository: Nothing // Todo 2. Add class type
+    private val remoteRepository: TemporaryDraftName
 ) : ViewModel() {
 
-    // Todo 2.
-    //  - define observable state holder
-    //  - load PokemonEntity list from the repository
-
-    // data class UiState()
+    // TODO 2.1 - define observable state holder
+    // TODO 2.2 - load PokemonEntity list from the repository
 
 }
