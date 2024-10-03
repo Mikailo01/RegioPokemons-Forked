@@ -1,13 +1,26 @@
 package cz.regiojet.regiopokemons
 
 import androidx.lifecycle.ViewModel
-import cz.regiojet.regiopokemons.data.repository.TemporaryDraftName
+import androidx.lifecycle.viewModelScope
+import cz.regiojet.regiopokemons.data.model.PokemonEntity
+import cz.regiojet.regiopokemons.data.repository.PokemonRepository
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
 
 class MainActivityViewModel(
-    private val remoteRepository: TemporaryDraftName
+    private val remoteRepository: PokemonRepository
 ) : ViewModel() {
 
-    // TODO 2.1 - define observable state holder
-    // TODO 2.2 - load PokemonEntity list from the repository
+    private val _uiState: MutableStateFlow<List<PokemonEntity>> = MutableStateFlow(emptyList())
+    val uiState: StateFlow<List<PokemonEntity>> = _uiState.asStateFlow()
 
+    fun getPokemons() {
+        viewModelScope.launch {
+            val result = remoteRepository.getPokemons()
+
+            _uiState.value = result
+        }
+    }
 }
